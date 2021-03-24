@@ -66,10 +66,10 @@ a:hover {
 .bg-tr-edge,
 .bg-br-edge,
 .bg-repeat {
-    -webkit-background-size: auto!important;
-    -moz-background-size: auto!important;
-    -o-background-size: auto!important;
-    background-size: auto!important;
+    -webkit-background-size: auto;
+    -moz-background-size: auto;
+    -o-background-size: auto;
+    background-size: auto;
 }
 
 .bg-repeat {
@@ -78,6 +78,7 @@ a:hover {
 
 .bg-t-edge {
     background: top no-repeat;
+    background-size: cover; /*AJOUT*/
 }
 
 .bloc-bg-texture::before {
@@ -532,7 +533,8 @@ button {
 
 a[data-lightbox] {
     position: relative;
-    display: block;
+    display: flex; /*block;*/
+    justify-content: center; /*Ajout*/
     text-align: center;
 }
 
@@ -651,11 +653,11 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: #575757;
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 1000px; /*600px;*/
 }
 
 .hero-bloc-text {
@@ -677,11 +679,11 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 14px;
 }
 
 .tight-width-whitespace {
-    max-width: 600px;
+    max-width: 1000px; /*600px;*/
     margin: auto auto auto auto;
 }
 
@@ -710,10 +712,10 @@ h2 {
 }
 
 h3 {
-    font-size: 15px;
+    font-size: larger;
     text-transform: uppercase;
     font-weight: 700;
-    color: #333333!important;
+    color: #364577;
 }
 
 .med-width-whitespace {
@@ -723,7 +725,7 @@ h3 {
 }
 
 h1 {
-    color: #333333!important;
+    color: #333333;
 }
 
 h4 {
@@ -753,7 +755,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgb(85 75 49 / 70%); /*rgba(165, 147, 99, 0.7);*/
     padding: 40px 40px 40px 40px;
 }
 
@@ -775,7 +777,7 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #ffffff; /*#F3976C;*/
 }
 
 .btn-atomic-tangerine {
@@ -1039,5 +1041,46 @@ h4 {
 @media (max-width: 767px) {
     .bloc-mob-center-text {
         text-align: center;
+    }
+}
+
+
+
+
+.col-sm-12 p {
+    font-size: large;
+}
+
+#bloc-2-services .col-sm-12 p {
+    font-size: x-large;
+    padding: 0 4em;
+}
+
+.commentaire {
+    font-size: large;
+}
+
+.auteur {
+    font-size: larger;
+    font-style: italic;
+}
+
+.col-sm-6 img {
+    height: 400px;
+}
+
+#bloc-8 .col-sm-6 {
+    font-size: medium;
+    padding-top: 1em;
+}
+
+#bloc-8 .col-sm-12 .row {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 767px) {
+    #bloc-8 .col-sm-12 .row {
+        flex-flow: column nowrap;
     }
 }
