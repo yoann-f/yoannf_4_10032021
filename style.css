@@ -101,7 +101,7 @@ a:hover {
 }
 
 .d-bloc {
-    color: rgba(255, 255, 255, .7);
+    color: #575757;/*rgba(255, 255, 255, .7);*/
 }
 
 .d-bloc button:hover {
@@ -738,7 +738,7 @@ h4 {
 }
 
 .white {
-    color: #FFFFFF!important;
+    color: #FFFFFF;
 }
 
 .portfolio-thumb {
@@ -761,7 +761,7 @@ h4 {
 
 .bold-link {
     font-weight: 900;
-    text-decoration: underline!important;
+    text-decoration: underline;
 }
 
 .bgc-white {
@@ -1077,10 +1077,22 @@ h4 {
 #bloc-8 .col-sm-12 .row {
     display: flex;
     justify-content: center;
+    flex-flow: wrap;
 }
 
 @media (max-width: 767px) {
-    #bloc-8 .col-sm-12 .row {
-        flex-flow: column nowrap;
+    #bloc-8 .col-sm-12 .row .social {
+        /*flex-flow: row nowrap;*/
+        padding: 0 1em;
+    }
+
+    #bloc-8 .col-sm-12 .row .col-sm-6 {
+        display: inline;
+        width: 100%;
+        text-align: center;
+    }
+
+    #bloc-8 .col-sm-6 .raccourcis {
+        font-size: large;
     }
 }
