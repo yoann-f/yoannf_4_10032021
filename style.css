@@ -305,15 +305,15 @@ a:hover {
 }
 
 .navbar-brand img {
-    height: 200px;
-    width: 300px; /*Ajout*/
+    /*height: 100%;
+    width: 100%; /*Ajout*/
     margin: 0 5px 0 0;
     display: inline;
 }
 
 .navbar-brand img[src$=svg] {
-    width: 12em;/*100px;*/
-    height: auto;
+    width: 300px;/*100px;*/
+    height: 60px;
 }
 
 .nav-center .navbar-brand img {
