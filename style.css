@@ -1081,6 +1081,7 @@ h4 {
 
 .col-sm-6 img {
     height: 400px;
+    width: 400px;
 }
 
 #bloc-8 .col-sm-6 {
@@ -1097,6 +1098,11 @@ h4 {
 .coordonnees {
     font-size: large;
     margin: 1em;
+}
+
+.image-resize-mode {
+    width:100px;
+    height: 100px;
 }
 
 @media (max-width: 767px) {
